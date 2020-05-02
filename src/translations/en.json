@@ -1,0 +1,34 @@
+{
+    "website.language.pl": "PL",
+    "website.language.en": "EN",
+    "theme.dark.on": "Dark mode ON",
+    "theme.dark.off": "Dark mode OFF",
+
+    "copyrights": "{copyright} Copyright 2020. All rights reserved.",
+
+    "page.about_us": "About Us",
+    "page.about_us.1": "Meet Our Team",
+    "page.about_us.2": "Amazing Feedback",
+    "page.about_us.3": "We Are Independent",
+    "page.about_us.4": "Insurance Companies",
+
+    "page.personal_insurance": "Personal Insurance",
+    "page.personal_insurance.1": "Home Insurance",
+    "page.personal_insurance.2": "Auto Insurance",
+    "page.personal_insurance.3": "Invidual Life Insurance",
+    "page.personal_insurance.4": "Condo Insurance",
+    "page.personal_insurance.5": "Flood Insurance",
+
+    "page.business_insurance": "Business Insurance",
+    "page.business_insurance.1": "Business Owners Insurance",
+    "page.business_insurance.2": "General Liability Insurance",
+    "page.business_insurance.3": "Commercial Umbrella Insurance",
+    "page.business_insurance.4": "Commercial Property Insurance",
+    "page.business_insurance.5": "Worker's Compensation Insurance",
+
+    "page.contact": "Contact",
+    "page.contact.1": "Rzeszów",
+    "page.contact.2": "Rudna Wielka",
+
+    "about_company": "Bennett Insurance Agency LLC{br}At Bennett Insurance Agency, our customers are our number one priority.Since opening in 2016, the team at Bennett Insurance Agency aims to excel in providing our customers with the quality service and affordability they deserve. Our service continues long past finding a policy—we continue to focus on your needs through policy updates, claims to report, and more. Feel a sense of security, as we are by your side every step of the way. By building a relationship with you, we can inform you about your unique risks while offering comprehensive insurance solutions to help protect you from the unexpected and plan for the predictable. Because protecting what matters most to you is what we’re here for. Read more about us!"
+}
