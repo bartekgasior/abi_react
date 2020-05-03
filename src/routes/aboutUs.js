@@ -3,7 +3,8 @@ import { FormattedMessage } from 'react-intl';
 
 const aboutUs = {
     name: <FormattedMessage id="page.about_us" />,
-    url: '#',
+    value: 'About Us',
+    url: 'about',
     sub: [
         {
             name: <FormattedMessage id="page.about_us.1" />,

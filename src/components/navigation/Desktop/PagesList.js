@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 const PagesMainLabel = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
-    cursor: default;
+    cursor: pointer;
+    background: ${({ theme, cursorOver, active }) => cursorOver ? theme.button_bg_hover : (active ? theme.button_active : null)};
+    color: ${({ theme, cursorOver, active }) => (cursorOver || active) ? theme.font_color_hover : theme.font_color};
 
-    background: ${({ theme, cursorOver }) => cursorOver ? theme.button_bg_hover : null};
 `
 
 const ElementContainer = styled.div`
@@ -50,20 +53,30 @@ const ElementContainer = styled.div`
 
 export const PagesList = ({ mainPage, subPages }) => {
     const [showList, setShowList] = useState(false);
+    const loc = useSelector(state => state.locations.currentLocation);
+
 
     return <ElementContainer
         onMouseEnter={() => setShowList(true)}
         onMouseLeave={() => setShowList(false)}
         fadeIn={showList}
     >
-        <PagesMainLabel cursorOver={showList}>
-            {mainPage.name}
-        </PagesMainLabel>
+
+        <Link to={mainPage.url} className='link'>
+            <PagesMainLabel
+                cursorOver={showList}
+                active={loc === mainPage.value}
+            >
+
+                {mainPage.name}
+
+            </PagesMainLabel>
+        </Link>
         <div className="pagesContainer">
             {subPages.map((page, index) => {
                 return <div className="page" key={index}>{page.name}</div>
             })}
         </div>
 
-    </ElementContainer>
+    </ElementContainer >
 } 

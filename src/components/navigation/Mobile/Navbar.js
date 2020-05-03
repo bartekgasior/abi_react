@@ -45,7 +45,7 @@ const ButtonsList = styled.div`
 
 const HiddenNavbar = styled.div`
     position: fixed;
-    z-index: 1;
+    z-index: 100;
     height: 10vh;
     width: 100%;
     transition: all 0.5s;

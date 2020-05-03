@@ -3,6 +3,7 @@ export const lightTheme = {
     navbar_bg: '#5CDB95',
     button_bg: '#379683',
     button_bg_hover: '#05386B',
+    button_active: '#266eb5',
     font_color: '#05386B',
     font_color_hover: '#EDF5E1',
 

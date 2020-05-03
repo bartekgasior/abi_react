@@ -6,6 +6,7 @@ import { faCog } from '@fortawesome/free-solid-svg-icons';
 import { SettingsList } from './SettingsList';
 import { PagesList } from './PagesList';
 import allRoutes from '../../../routes';
+import { Link } from 'react-router-dom';
 
 const Nav = styled.nav`
     position: fixed;
@@ -18,8 +19,24 @@ const Nav = styled.nav`
     display: flex;
     width: 100%;
     height: 10vh;
+
     & div{
         margin: 0.25em;
+    }
+
+    & .link{
+        color: ${({ theme }) => theme.font_color};
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & > div{
+            width: 100%;
+            height: 100%;
+        }
     }
 `
 const Logo = styled.div`
@@ -108,12 +125,14 @@ export const Navbar = () => {
         setShowSettings(!showSettings);
     }
 
-    // console.log(allRoutes.aboutUs.sub);
-
     return <Nav show={scrollY.show}>
+
         <Logo>
-            LOGO
-       </Logo>
+            <Link className = 'link' to='/'>
+                LOGO
+            </Link>
+        </Logo>
+
         <div style={{ flex: 2 }}></div>
         <ButtonsList triggerAnimation={showSettings} >
             <div className="links">

@@ -5,16 +5,33 @@ const RowContainer = styled.div`
     padding: 0.5em 1em;
     display: flex;
     justify-content: center;
-    background: red;
     color: ${({ theme }) => theme.font_color};
+
+    & > div{
+        padding: 1em 1em;
+    }
 
     & .center{
         display: flex;
         justify-content: center;
     }
 
+    & .flex-direction-column{
+        flex-direction: column;
+    }
+
+    & .justify-content-space-around{
+        justify-content: space-around;
+    }
+
     & .center-text{
         text-align: center;
+    }
+
+    & .boxShadow{
+        border: 1px solid ${({ theme }) => `1px solid ${theme.borderColors.light}`};
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     }
 
     & .col-10{
@@ -68,7 +85,11 @@ const RowContainer = styled.div`
             width: 40%;
         }
 
-        & .col-md-50, .col-md-60{
+        & .col-md-50 {
+            width: 50%;
+        }
+        
+        & .col-md-60{
             width: 60%;
         }
 

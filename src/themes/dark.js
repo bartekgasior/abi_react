@@ -3,6 +3,7 @@ export const darkTheme = {
     navbar_bg: '#1f4287',
     button_bg: '#278ea5',
     button_bg_hover: '#21e6c1',
+    button_active: '#09ad8e',
     font_color: '#fff',
     font_color_hover: '#000',
 
