@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
-
 import { useLocation } from '../../hooks/useLocation';
 import allRoutes from '../../routes';
-
 import styled from 'styled-components';
+
 import { CompanyDescription } from './CompanyDescription';
 import { InsuranceDescription } from './InsuranceDescription';
+import { InsuranceAdvantage } from './InsuranceAdvantage';
 
 const MainContainer = styled.div`
     display: flex;
@@ -22,5 +22,6 @@ export const HomeComponent = () => {
     return <MainContainer>
         <CompanyDescription />
         <InsuranceDescription />
+        <InsuranceAdvantage />
     </MainContainer>
 }

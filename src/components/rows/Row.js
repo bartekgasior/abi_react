@@ -6,6 +6,7 @@ const RowContainer = styled.div`
     display: flex;
     justify-content: center;
     color: ${({ theme }) => theme.font_color};
+    background-color: ${({ bg }) => bg};
 
     & > div{
         padding: 1em 1em;
@@ -28,10 +29,18 @@ const RowContainer = styled.div`
         text-align: center;
     }
 
+    & .flex-wrap{
+        flex-wrap: wrap;
+    }
+
     & .boxShadow{
         border: 1px solid ${({ theme }) => `1px solid ${theme.borderColors.light}`};
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    }
+
+    & .margin-x-1{
+        margin: 1em 0;
     }
 
     & .col-10{
@@ -113,6 +122,6 @@ const RowContainer = styled.div`
 `
 
 export const Row = (props) =>
-    <RowContainer>
+    <RowContainer bg={props.bgColor}>
         {props.children}
     </RowContainer>

@@ -23,8 +23,8 @@ export const InsuranceDescription = () =>
                     </p>
                 </div>
 
-                <div className='col-100 center justify-content-space-around'>
-                    <div className='col-md-100 col-30'>
+                <div className='col-100 center justify-content-space-around flex-wrap'>
+                    <div className='col-sm-100 col-md-40 col-30 margin-x-1'>
                         <ImageBackgroundButton
                             label={'label #1'}
                             img={button1}
@@ -32,8 +32,8 @@ export const InsuranceDescription = () =>
                             icon={<FontAwesomeIcon icon={faHome} />}
                         />
                     </div>
-
-                    <div className='col-md-100 col-30'>
+ 
+                    <div className='col-sm-100 col-md-40 col-30 margin-x-1'>
                         <ImageBackgroundButton
                             label={'label #2'}
                             img={button2}
@@ -42,7 +42,7 @@ export const InsuranceDescription = () =>
                         />
                     </div>
 
-                    <div className='col-md-100 col-30'>
+                    <div className='col-sm-100 col-md-40 col-30 margin-x-1'>
                         <ImageBackgroundButton
                             label={'label #2'}
                             img={button3}
