@@ -75,8 +75,7 @@ const Settings = styled.ul`
     background: ${ ({ theme }) => theme.bg};
     position: absolute;
     z-index: 1;
-    top: 100%;
-    
+    top: 1.5em;  
     right: 0;
     display: block;
     margin: 0;

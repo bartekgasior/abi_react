@@ -7,23 +7,23 @@ const businessInsurance = {
     sub: [
         {
             name: <FormattedMessage id='page.business_insurance.1' />,
-            url: '#'
+            url: '#1'
         },
         {
             name: <FormattedMessage id='page.business_insurance.2' />,
-            url: '#'
+            url: '#2'
         },
         {
             name: <FormattedMessage id='page.business_insurance.3' />,
-            url: '#'
+            url: '#3'
         },
         {
             name: <FormattedMessage id='page.business_insurance.4' />,
-            url: '#'
+            url: '#4'
         },
         {
             name: <FormattedMessage id='page.business_insurance.5' />,
-            url: '#'
+            url: '#5'
         }
     ]
 }

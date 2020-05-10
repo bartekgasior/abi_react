@@ -69,14 +69,14 @@ const ButtonsList = styled.div`
     & .listSettingsItem{
         position: relative;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
     }
 
     & .faIcon{
         
         cursor: pointer;
-        width: 2.5em;
-        height: 2.5em;
+        width: 1.5em;
+        height: 1.5em;
         color: ${({ theme }) => theme.button_bg};
         
         transition: transform 500ms ease-in-out;

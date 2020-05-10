@@ -7,11 +7,11 @@ const contact = {
     sub: [
         {
             name: <FormattedMessage id='page.contact.1' />,
-            url: '#',
+            url: '#1',
         },
         {
             name: <FormattedMessage id='page.contact.2' />,
-            url: '#',
+            url: '#2',
         }
     ]
 }

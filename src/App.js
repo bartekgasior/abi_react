@@ -18,11 +18,15 @@ import { HomeComponent } from './pages/Home/HomeComponent';
 
 const BodyContainer = styled.div`
   padding-top: 10vh;
-  padding-bottom: 20em;
+  padding-bottom: 17em;
   background: #379683; 
   width: 100%;
   min-height: 100vh;
   position: relative;
+  
+  @media(max-width: ${({ theme }) => theme.mediaQueries.md}){
+      padding-bottom: 29em;
+  }
 `
 
 const App = (props) => {

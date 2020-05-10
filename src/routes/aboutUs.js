@@ -8,19 +8,19 @@ const aboutUs = {
     sub: [
         {
             name: <FormattedMessage id="page.about_us.1" />,
-            url: '#'
+            url: '#1'
         },
         {
             name: <FormattedMessage id="page.about_us.2" />,
-            url: '#'
+            url: '#2'
         },
         {
             name: <FormattedMessage id="page.about_us.3" />,
-            url: '#'
+            url: '#3'
         },
         {
             name: <FormattedMessage id="page.about_us.4" />,
-            url: '#'
+            url: '#4'
         }
     ]
 };
